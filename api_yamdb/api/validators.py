@@ -16,5 +16,5 @@ def email_is_valid(email):
 def username_validation(self, value):
     regex = re.compile(r"^[\w.@+-]+$")
     if not re.fullmatch(regex, value) or self.initial_data["username"] == "me":
-        raise serializers.ValidationError("Проверьте username!!")
+        raise serializers.ValidationError("Проверьте username!")
     return value
