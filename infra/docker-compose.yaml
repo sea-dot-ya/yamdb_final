@@ -6,7 +6,7 @@ services:
     volumes:
       - /var/lib/postgresql/data/
     env_file:
-      - /Users/test/Dev/infra_sp2/infra/.env
+      - ./.env
   web:
     image: seadot/api_yamdb:latest
     restart: always
